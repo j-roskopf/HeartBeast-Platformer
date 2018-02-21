@@ -9,5 +9,5 @@ if(gun_direction < 90 || gun_direction > 270) {
 }
 
 //draw them both
-draw_sprite_ext(s_player, 0, x, y, x_scale_ * player_direction, y_scale_, 0, image_blend, image_alpha);
+draw_sprite_ext(s_player, image_index, x, y, x_scale_ * player_direction, y_scale_, 0, image_blend, image_alpha);
 draw_sprite_ext(s_gun, 0, x - (6 * player_direction), y - sprite_height / 2, image_xscale, player_direction, gun_direction, image_blend, image_alpha);
