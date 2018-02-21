@@ -21,3 +21,7 @@ alarm[0] = bullet_cooldown_
 // scale variables
 x_scale_ = image_xscale;
 y_scale_ = image_yscale;
+
+//hide the solid layer
+var solid_layer = layer_get_id("Solids")
+layer_set_visible(solid_layer, debug_mode)
