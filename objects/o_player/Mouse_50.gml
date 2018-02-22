@@ -10,11 +10,12 @@ if(alarm[0] <= 0) {
 	}
 
 	var gun_x = x - 6 * player_direction
-	var x_offset = lengthdir_x(18, gun_direction);
-	var y_offset = lengthdir_y(18, gun_direction);
+	var x_offset = lengthdir_x(16, gun_direction);
+	var y_offset = lengthdir_y(16, gun_direction);
 
 	var bullet = instance_create_layer(gun_x + x_offset, y + y_offset - sprite_height / 2, "Instances", o_bullet);
 	bullet.direction = gun_direction
+	bullet.image_angle = gun_direction
 	alarm[0] = bullet_cooldown_
 }
 

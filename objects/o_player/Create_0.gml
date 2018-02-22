@@ -6,7 +6,9 @@ acceleration_ = 1;
 jump_height_ = -12;
 max_speed = 4;
 friction_ = .2;
-health_ = 5;
+max_health_ = 5;
+health_ = max_health_;
+
 
 keyboard_set_map(ord("A"), vk_left)
 keyboard_set_map(ord("S"), vk_down)

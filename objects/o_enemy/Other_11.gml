@@ -13,6 +13,7 @@ if(alarm[0] <= 0 && instance_exists(o_player)) {
 
 	var bullet = instance_create_layer(x + x_offset, y + y_offset, "Instances", o_enemy_bullet);
 	bullet.direction = bullet_direction
+	bullet.image_angle = bullet_direction
 	alarm[0] = bullet_cooldown_
 }
 
