@@ -36,7 +36,7 @@ if(!place_meeting(x, y + 1, o_solid)) {
 	y_scale_ = image_yscale * 1.4
 }
 
-move(speed_)
+move(speed_, 0)
 
 //checked for landing
 if(place_meeting(x, y + 1, o_solid) && !place_meeting(x, yprevious + 1, o_solid)) {
