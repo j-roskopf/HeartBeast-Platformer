@@ -8,6 +8,7 @@ max_speed = 4;
 friction_ = .2;
 max_health_ = 5;
 health_ = max_health_;
+invincible_ = false
 
 
 keyboard_set_map(ord("A"), vk_left)

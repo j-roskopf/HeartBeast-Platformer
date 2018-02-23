@@ -8,6 +8,16 @@ if(gun_direction < 90 || gun_direction > 270) {
 	player_direction = 1	
 }
 
+var _interval = 16
+if(alarm[1] % _interval <= _interval / 2) {
+	gpu_set_fog(false, c_white, 0, 1)	
+} else {
+	gpu_set_fog(true, c_white, 0, 1)	
+}
+
 //draw them both
 draw_sprite_ext(s_player, image_index, x, y, x_scale_ * player_direction, y_scale_, 0, image_blend, image_alpha);
+
 draw_sprite_ext(s_gun, 0, x - (6 * player_direction), y - sprite_height / 2, image_xscale, player_direction, gun_direction, image_blend, image_alpha);
+
+gpu_set_fog(false, c_white, 0, 1)

@@ -1,6 +1,7 @@
 /// @description Player Movement
 
 if(health_ <= 0) {
+	room_goto(room_menu)
 	instance_destroy()	
 }
 
